@@ -1,0 +1,14 @@
+name: pypr23
+channels:
+    - conda-forge
+dependencies:
+    - python
+    - numpy
+    - scipy
+    - matplotlib
+    - jupyter
+    - ipykernel
+    - ipywidgets
+    - pandas
+    - seaborn
+    - requests
