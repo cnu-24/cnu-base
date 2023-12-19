@@ -1,14 +1,11 @@
-name: pypr23
+name: cnu-24
 channels:
     - conda-forge
 dependencies:
-    - python
+    - python=3.11
     - numpy
     - scipy
     - matplotlib
     - jupyter
     - ipykernel
     - ipywidgets
-    - pandas
-    - seaborn
-    - requests
