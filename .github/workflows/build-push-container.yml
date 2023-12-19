@@ -17,6 +17,7 @@ jobs:
         uses: macbre/push-to-ghcr@master
         with:
           image_name: ${{ github.repository }}  # it will be lowercased internally
-          repository: ghcr.io/cnu-24
+          # repository: ghcr.io/cnu-24
+          repository: ghcr.io
           github_token: ${{ secrets.GITHUB_TOKEN }}
           image_tag: ${{ github.ref_name }} # Match branch name
