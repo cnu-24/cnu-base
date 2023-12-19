@@ -3,7 +3,7 @@
 To create a new container with a modified conda env:
 - Create a new branch (the branch name will become the container image tag later).
 - Edit the `environment.yml` file to adjust to the new conda env.
-- In the workshop/tutorial/etc modify `.devcontainer/devcontainer.json`, changing the value associated to `"image"` to `ghcr.io/cnu-23/cnu-23/cnu-python-base:<branch-name>`
+- In the workshop/tutorial/etc modify `.devcontainer/devcontainer.json`, changing the value associated to `"image"` to `ghcr.io/cnu-23/cnu-python-base:<branch-name>`
 
 ## Initial setup
 
@@ -15,5 +15,7 @@ To create a new container with a modified conda env:
 - `docker push ghcr.io/pypr23/pypr-base:latest`
 - GH settings:
     - Link this repo to package
-    - Organisation settings: Packages > Allow members to create internal packages
+    - Organisation settings:
+        - Packages > Allow members to create internal packages
+        - Actions > Give this repo's actions write permissions (authorise at org level first)
     - Repo settings: visibility > internal
