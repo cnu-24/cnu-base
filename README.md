@@ -17,5 +17,5 @@ To create a new container with a modified conda env:
     - Link this repo to package
     - Organisation settings:
         - Packages > Allow members to create internal packages
-        - Actions > Give this repo's actions write permissions (authorise at org level first)
+        - Actions > Give this repo's actions write permissions (authorise at org level first!)
     - Repo settings: visibility > internal
