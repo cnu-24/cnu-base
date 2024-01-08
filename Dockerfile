@@ -6,7 +6,8 @@ FROM ghcr.io/mamba-org/micromamba-devcontainer:git-c160e88-jammy
 
 COPY --chown="${MAMBA_USER}:${MAMBA_USER}" environment.yml ./
 # RUN micromamba env create --yes --name cnu --file environment.yml && micromamba clean --all --yes
-RUN micromamba update --yes --name base --file environment.yml
+# RUN micromamba update --yes --name base --file environment.yml
+RUN micromamba install -c conda-forge --yes python=3.11 numpy scipy matplotlib jupyter ipykernel ipywidgets conda
 
 ARG MAMBA_DOCKERFILE_ACTIVATE=1
 
