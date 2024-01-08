@@ -5,7 +5,8 @@ FROM ghcr.io/mamba-org/micromamba-devcontainer:git-c160e88-jammy
 # RUN umask 0002 && /opt/conda/bin/conda env update -n base -f /tmp/conda-tmp/environment.yml && rm -rf /tmp/conda-tmp
 
 COPY --chown="${MAMBA_USER}:${MAMBA_USER}" environment.yml ./
-RUN micromamba env create --yes --name cnu --file environment.yml && micromamba clean --all --yes
+# RUN micromamba env create --yes --name cnu --file environment.yml && micromamba clean --all --yes
+RUN micromamba env create --yes --file environment.yml && micromamba clean --all --yes
 
 ARG MAMBA_DOCKERFILE_ACTIVATE=1
 
