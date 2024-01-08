@@ -1,4 +1,4 @@
-name: cnu-24
+name: base
 channels:
     - conda-forge
 dependencies:
